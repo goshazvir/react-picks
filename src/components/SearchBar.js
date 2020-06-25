@@ -5,11 +5,6 @@ const SearchBar = (props) => {
 
     const onSearchInputChange = (event) => {
         setSearchInputVal(event.target.value)
-        console.log(event.target.value)
-    }
-
-    const onSearchInputClick = () => {
-        console.log('input was clicked')
     }
 
     const onFormSubmit = (event) => {
@@ -25,7 +20,6 @@ const SearchBar = (props) => {
                     <input
                         type='text'
                         value={SearchInputVal}
-                        onClick={onSearchInputClick}
                         onChange={onSearchInputChange}
                     />
                 </div>
